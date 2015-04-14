@@ -27,8 +27,15 @@
 *.out
 *.app
 
+# Images
+*.png
+*.jpg
+*.gif
+
 # NetBeans specific #
-nbproject/private/
+Makefile
+.dep.inc
+nbproject/*
 build/
 nbbuild/
 dist/
