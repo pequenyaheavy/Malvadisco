@@ -16,7 +16,6 @@ public:
     Arquero(const Arquero& orig);
     virtual ~Arquero();
 private:
-
 };
 
 #endif	/* ARQUERO_H */

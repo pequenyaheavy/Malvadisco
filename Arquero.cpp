@@ -8,11 +8,13 @@
 #include "Arquero.h"
 
 Arquero::Arquero() {
+
 }
 
 Arquero::Arquero(const Arquero& orig) {
 }
 
 Arquero::~Arquero() {
+    //destructor
 }
 
