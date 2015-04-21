@@ -15,8 +15,8 @@ public:
     Soldado(sf::Texture *texture, int x, int y);
     //Soldado(const Soldado& orig);
     virtual ~Soldado();
-    void update();
-    void render();
+    virtual void update();
+    virtual void render();
 private:
 
 };

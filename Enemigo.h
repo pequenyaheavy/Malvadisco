@@ -13,19 +13,18 @@
 class Enemigo : public NPC {
 public:
     Enemigo(sf::Texture *texture, int x, int y);
-    Enemigo(const Enemigo& orig);
+    //Enemigo(const Enemigo& orig);
     virtual ~Enemigo();
-    virtual void update() const;
-    /*interpolar x, y desde old a new*/
-    virtual void render() const;
+    virtual void update();
+    virtual void render();
     int getOldX();
     int getOldY();
-    int setOldX();
-    int setOldY();
     int getNewX();
     int getNewY();
-    int setNewX();
-    int setNewY();
+    void setOldX(int x);
+    void setOldY(int y);
+    void setNewX(int x);
+    void setNewY(int y);
 private:
     /*variables de posicion para bucle interpolado*/
     int oldX, oldY;

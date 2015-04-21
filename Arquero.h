@@ -15,8 +15,8 @@ public:
     Arquero(sf::Texture *texture, int x, int y);
     //Arquero(const Arquero& orig);
     virtual ~Arquero();
-    void update();
-    void render();
+    virtual void update();
+    virtual void render();
 private:
 };
 

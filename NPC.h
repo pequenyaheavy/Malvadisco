@@ -8,23 +8,25 @@
 #ifndef NPC_H
 #define	NPC_H
 
+#include <SFML/Graphics.hpp>
+
 class NPC {
 public:
-    NPC(sf::Texture texture, int x, int y);
-    NPC(const NPC& orig);
+    NPC(sf::Texture *texture, int x, int y);
+    //NPC(const NPC& orig);
     virtual ~NPC();
     /*calcular nueva posicion en new y antigua guardarla en old cada X segundos*/
-    virtual void update() const;
+    virtual void update();
     /*interpolar x, y desde old a new*/
-    virtual void render() const;
+    virtual void render();
     int getX();
     int getY();
-    int setX();
-    int setY();
     int getState();
-    int setState();
+    void setX(int x);
+    void setY(int y);
+    void setState(int state);
 private:
-    sf::Sprite sprite;
+    sf::Sprite *sprite;
     /*variables de posicion para bucle interpolado*/
     int x,y;
     /*variable para la animacion en el render*/

@@ -11,51 +11,50 @@ Enemigo::Enemigo(sf::Texture *texture, int x, int y) : NPC(texture, x, y) {
     
 }
 
-Enemigo::Enemigo(const Enemigo& orig) {
-}
+//Enemigo::Enemigo(const Enemigo& orig) {}
 
 Enemigo::~Enemigo() {
 }
 
-Enemigo::update() {
+void Enemigo::update() {
     /*calcular nueva posicion en new y antigua guardarla en old cada X segundos*/
 }
 
-Enemigo::render() {
+void Enemigo::render() {
     /*calcular nueva posicion en new y antigua guardarla en old cada X segundos*/
 }
 
 
 // GETTERS AND SETTERS
 
-Enemigo::getOldX() {
+int Enemigo::getOldX() {
     return this->oldX;
 }
 
-Enemigo::getOldY() {
+int Enemigo::getOldY() {
     return this->oldY;
 }
 
-Enemigo::setOldX(int x) {
+void Enemigo::setOldX(int x) {
     this->oldX=x;
 }
 
-Enemigo::setOldY(int y) {
+void Enemigo::setOldY(int y) {
     this->oldY=y;
 }
 
-Enemigo::getNewX() {
+int Enemigo::getNewX() {
     return this->newX;
 }
 
-Enemigo::getNewY() {
+int Enemigo::getNewY() {
     return this->newY;
 }
 
-Enemigo::setNewX(int x) {
+void Enemigo::setNewX(int x) {
     this->newX=x;
 }
 
-Enemigo::setNewY(int y) {
+void Enemigo::setNewY(int y) {
     this->newY=y;
 }
