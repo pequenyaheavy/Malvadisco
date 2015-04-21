@@ -12,9 +12,11 @@
 
 class Soldado : public Enemigo {
 public:
-    Soldado();
-    Soldado(const Soldado& orig);
+    Soldado(sf::Texture *texture, int x, int y);
+    //Soldado(const Soldado& orig);
     virtual ~Soldado();
+    void update();
+    void render();
 private:
 
 };

@@ -12,11 +12,12 @@
 
 class Arquero : public Enemigo {
 public:
-    Arquero();
-    Arquero(const Arquero& orig);
+    Arquero(sf::Texture *texture, int x, int y);
+    //Arquero(const Arquero& orig);
     virtual ~Arquero();
+    void update();
+    void render();
 private:
-
 };
 
 #endif	/* ARQUERO_H */

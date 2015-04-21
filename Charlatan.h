@@ -12,9 +12,11 @@
 
 class Charlatan : public NPC {
 public:
-    Charlatan();
-    Charlatan(const Charlatan& orig);
+    Charlatan(sf::Texture *texture, int x, int y);
+    //Charlatan(const Charlatan& orig);
     virtual ~Charlatan();
+    virtual void update();
+    virtual void render();
 private:
 
 };

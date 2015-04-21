@@ -7,12 +7,17 @@
 
 #include "Tendero.h"
 
-Tendero::Tendero() {
+Tendero::Tendero(sf::Texture *texture, int x, int y) : Charlatan(texture,x,y) {
 }
 
-Tendero::Tendero(const Tendero& orig) {
-}
+//Tendero::Tendero(const Tendero& orig) {}
 
 Tendero::~Tendero() {
+}
+
+void Tendero::update() {
+}
+
+void Tendero::render() {
 }
 

@@ -12,9 +12,11 @@
 
 class Tendero : public Charlatan {
 public:
-    Tendero();
-    Tendero(const Tendero& orig);
+    Tendero(sf::Texture *texture, int x, int y);
+    //Tendero(const Tendero& orig);
     virtual ~Tendero();
+    void update();
+    void render();
 private:
 
 };
