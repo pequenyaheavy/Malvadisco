@@ -7,7 +7,7 @@
 
 #include "EstadoMenu.h"
 
-EstadoMenu::EstadoMenu() {
+EstadoMenu::EstadoMenu() : Estado() {
 }
 
 EstadoMenu::EstadoMenu(const EstadoMenu& orig) {

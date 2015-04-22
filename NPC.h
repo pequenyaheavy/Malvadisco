@@ -19,12 +19,14 @@ public:
     virtual void update();
     /*interpolar x, y desde old a new*/
     virtual void render();
+    sf::Sprite draw();
     int getX();
     int getY();
     int getState();
     void setX(int x);
     void setY(int y);
     void setState(int state);
+    
 private:
     sf::Sprite *sprite;
     /*variables de posicion para bucle interpolado*/

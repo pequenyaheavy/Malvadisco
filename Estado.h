@@ -11,8 +11,9 @@
 class Estado {
 public:
     Estado();
-    Estado(const Estado& orig);
+    //Estado(const Estado& orig);
     virtual ~Estado();
+    void update();
 private:
 
 };

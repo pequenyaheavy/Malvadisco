@@ -8,13 +8,19 @@
 #ifndef JUEGO_H
 #define	JUEGO_H
 
+#include "Estado.h"
+#include <SFML/Graphics.hpp>
+
 class Juego {
 public:
     Juego();
-    Juego(const Juego& orig);
+    //Juego(const Juego& orig);
     virtual ~Juego();
+    void run();
+    sf::RenderWindow* getWindow();
 private:
-
+    sf::RenderWindow *window;
+    Estado *estadoActual;
 };
 
 #endif	/* JUEGO_H */

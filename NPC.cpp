@@ -32,6 +32,10 @@ int NPC::getY() {
     return this->y;
 }
 
+sf::Sprite NPC::draw() {
+    return *(this->sprite);
+}
+
 int NPC::getState() {
     return this->state;
 }
